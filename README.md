@@ -368,7 +368,18 @@ Bisa di liat ini adalah screenshot yang berisi zip yang di dalamnya berada File 
 
 ## Task 3C
 Untuk 3C kita disuruh untuk mendownload Gambar heroine yang kita dapat dari internet, Ini adalah contoh yang akan muncul di file ketika kita sedang merun code ini:
+
 ![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2016-01-23.png)
+![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2016-02-52.png)
+
+ini adalah salah satu contoh yang berada di file dan berisi gambar yang sudah di download, dan juga mendownload sejumlah bulan release manhwa tersebut
+
+## task 3D
+Untuk 3D kita disuruh untuk menzip Gambar yang sudah di buat dan menghapus gambar yang berada di file heroine. berikut contoh di file tersebut:
+
+![imagealt](
+![imagealt](
+
 
 
 
