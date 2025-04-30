@@ -358,6 +358,7 @@ selesai deh, cella bilang makasih ya ke kamu!!!![1] + Done
 
 ## Task 3A
 Untuk 3A kita disuruh menamapilkan File Txt yang berisi data yang diambil link tadi berikut ini adalah contoh isi dari File TXT:
+
 ![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2015-47-10.png?raw=true)
 
 ## Task 3B
