@@ -187,3 +187,116 @@ Buat perintah wget untuk mengunduh dari URL heroine.
 Jalankan system(cmd) untuk mengeksekusi unduhan.
 Tampilkan nama file yang telah diunduh.
 Setelah selesai, kembalikan NULL ke thread caller.
+
+### Zip gambar Heroine
+```
+void zip(const char* initials, const char* heroine) {
+    char zipname[256], cmd[1024];
+    sprintf(zipname, "Archive/Images/%s_%s.zip", initials, heroine);
+    sprintf(cmd, "find Heroines/%s -type f -name '*.jpg' | sort | zip -@ \"%s\"", heroine, zipname);
+
+    if (fork() == 0) {
+        execl("/bin/sh", "sh", "-c", cmd, NULL);
+        perror("zip");
+        exit(1);
+    }
+    wait(NULL);
+}
+```
+find: mencari semua file .jpg heroine.
+sort: mengurutkan nama file (agar ZIP-nya rapi).
+zip -@: membaca daftar file dari input (stdin) dan membuat ZIP.
+Jalankan perintah di child process menggunakan:
+```
+execl("/bin/sh", "sh", "-c", cmd, NULL);
+```
+Menjalankan seluruh cmd sebagai perintah shell (sh -c).
+Parent akan menunggu proses selesai dengan wait(NULL).
+
+### Hapus gambar setelah di zip
+```
+void delete(const char* heroine) {
+    char cmd[256];
+    sprintf(cmd, "find Heroines/%s -type f -name '*.jpg' -delete", heroine);
+    system(cmd);
+}
+```
+Penjelasan :
+find: mencari semua file.
+-type f: hanya cari file (bukan folder).
+-name '*.jpg': filter hanya file .jpg.
+-delete: langsung hapus file yang ditemukan.
+
+### Menzip File TXT 
+```
+void ziptxt(const char* outfile, const char* initials) {
+    char zipname[256], path[256];
+    sprintf(zipname, "Archive/%s.zip", initials);
+    sprintf(path, "Manhwa/%s.txt", outfile);
+
+    if (fork() == 0) {
+        char* args[] = {"zip", "-j", zipname, path, NULL};
+        execvp("zip", args);
+        perror("zip");
+        exit(1);
+    }
+    wait(NULL);
+}
+```
+Penjealsannya: 
+Jalankan perintah zip -j menggunakan fork dan exec:
+```
+zip -j Archive/<INISIAL>.zip Manhwa/<NAMA_FILE>.txt
+```
+-j: (junk path) menyimpan file dalam ZIP tanpa struktur folder.
+
+Proses dilakukan di child (fork()), eksekusi dengan execvp(), dan ditunggu oleh parent dengan wait(NULL).
+
+### kode Memanggil task 3A
+```
+    for (int i = 0; i < n; i++) {
+        filenames[i] = clean(list[i].title);
+        fetch_json(list[i].id, filenames[i]);
+        write_text(filenames[i]);
+    }
+```
+### Kode memanggil Task 3B
+```
+    for (int i = 0; i < n; i++) {
+        char* initials = inisial(list[i].title);
+        ziptxt(filenames[i], initials);
+        free(initials);
+    }
+```
+### Kode memanggil Task 3C ( Gambar Heroine)
+```
+    for (int i = 0; i < n; i++) {
+        char foldername[64];
+        sprintf(foldername, "Heroines/%s", list[i].heroine);
+        make_folder(foldername);
+
+        ThreadArgs* arg = malloc(sizeof(ThreadArgs));
+        strcpy(arg->name, list[i].heroine);
+        strcpy(arg->url, list[i].image_url);
+        arg->count = list[i].release_month;
+
+        pthread_t tid;
+        pthread_create(&tid, NULL, download_images, arg);
+        pthread_join(tid, NULL);
+
+        free(arg);
+    }
+```
+### Kode memanggil Task 3D (Zip Lalu Hapus)
+```
+    for (int i = 0; i < n; i++) {
+        char* initials_now = inisial(list[i].title);
+        zip(initials_now, list[i].heroine);
+        delete(list[i].heroine);
+        free(initials_now);
+        free(filenames[i]);
+    }
+```
+## Output
+
+
