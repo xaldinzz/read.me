@@ -298,5 +298,63 @@ Proses dilakukan di child (fork()), eksekusi dengan execvp(), dan ditunggu oleh 
     }
 ```
 ## Output
+### Log
+Log yang akan muncul ketika kita mengcompile file tersebut akan muncul seperti ini:
+```
+updating: Mistaken_as_the_Monster_Dukes_Wife.txt (deflated 17%)
+updating: The_Villainess_Lives_Again.txt (deflated 16%)
+updating: No_I_Only_Charmed_the_Princess.txt (deflated 15%)
+updating: Darling_Why_Cant_We_Divorce.txt (deflated 16%)
+Downloaded: Heroines/Lia/Lia_01.jpg
+Downloaded: Heroines/Lia/Lia_02.jpg
+Downloaded: Heroines/Lia/Lia_03.jpg
+Downloaded: Heroines/Tia/Tia_01.jpg
+Downloaded: Heroines/Tia/Tia_02.jpg
+Downloaded: Heroines/Tia/Tia_03.jpg
+Downloaded: Heroines/Tia/Tia_04.jpg
+Downloaded: Heroines/Tia/Tia_05.jpg
+Downloaded: Heroines/Tia/Tia_06.jpg
+Downloaded: Heroines/Tia/Tia_07.jpg
+Downloaded: Heroines/Yeldia/Yeldia_01.jpg
+Downloaded: Heroines/Yeldia/Yeldia_02.jpg
+Downloaded: Heroines/Yeldia/Yeldia_03.jpg
+Downloaded: Heroines/Yeldia/Yeldia_04.jpg
+Downloaded: Heroines/Ophelia/Ophelia_01.jpg
+Downloaded: Heroines/Ophelia/Ophelia_02.jpg
+Downloaded: Heroines/Ophelia/Ophelia_03.jpg
+Downloaded: Heroines/Ophelia/Ophelia_04.jpg
+Downloaded: Heroines/Ophelia/Ophelia_05.jpg
+Downloaded: Heroines/Ophelia/Ophelia_06.jpg
+Downloaded: Heroines/Ophelia/Ophelia_07.jpg
+Downloaded: Heroines/Ophelia/Ophelia_08.jpg
+Downloaded: Heroines/Ophelia/Ophelia_09.jpg
+Downloaded: Heroines/Ophelia/Ophelia_10.jpg
+updating: Heroines/Lia/Lia_01.jpg (deflated 1%)
+updating: Heroines/Lia/Lia_02.jpg (deflated 1%)
+updating: Heroines/Lia/Lia_03.jpg (deflated 1%)
+updating: Heroines/Tia/Tia_01.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_02.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_03.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_04.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_05.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_06.jpg (deflated 0%)
+updating: Heroines/Tia/Tia_07.jpg (deflated 0%)
+updating: Heroines/Yeldia/Yeldia_01.jpg (deflated 3%)
+updating: Heroines/Yeldia/Yeldia_02.jpg (deflated 3%)
+updating: Heroines/Yeldia/Yeldia_03.jpg (deflated 3%)
+updating: Heroines/Yeldia/Yeldia_04.jpg (deflated 3%)
+updating: Heroines/Ophelia/Ophelia_01.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_02.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_03.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_04.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_05.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_06.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_07.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_08.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_09.jpg (deflated 5%)
+updating: Heroines/Ophelia/Ophelia_10.jpg (deflated 5%)
+selesai deh, cella bilang makasih ya ke kamu!!!![1] + Done
+```
+
 
 
