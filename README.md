@@ -377,8 +377,11 @@ ini adalah salah satu contoh yang berada di file dan berisi gambar yang sudah di
 ## task 3D
 Untuk 3D kita disuruh untuk menzip Gambar yang sudah di buat dan menghapus gambar yang berada di file heroine. berikut contoh di file tersebut:
 
-![imagealt](
-![imagealt](
+![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2016-12-23.png)
+
+![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2016-11-56.png)
+
+Berikut adalah foto-foto yang membuktikan bahwa kode ini bisa berjalan dengan benar.
 
 
 
