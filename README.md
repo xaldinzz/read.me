@@ -363,10 +363,12 @@ Untuk 3A kita disuruh menamapilkan File Txt yang berisi data yang diambil link t
 ## Task 3B
 Untuk 3B Kita disuruh untuk membuat file zip yang berisi data dari file txt ini adalah contoh file zipnya:
 ![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2015-55-54.png)
+
 Bisa di liat ini adalah screenshot yang berisi zip yang di dalamnya berada File Txtnya. dan juga sesuai dengan perintah di Task 3B kita harus membuat file yang berisi hanya huruf awal dengan huruf kapitalnya saja.
 
 ## Task 3C
 Untuk 3C kita disuruh untuk mendownload Gambar heroine yang kita dapat dari internet, Ini adalah contoh yang akan muncul di file ketika kita sedang merun code ini:
+![imagealt](https://github.com/xaldinzz/read.me/blob/main/Screenshot%20from%202025-04-30%2016-01-23.png)
 
 
 
